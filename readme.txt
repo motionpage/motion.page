@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
 Requires at least: 5.7
-Tested up to: 5.9 RC 2
+Tested up to: 5.9-RC3
 Requires PHP: 7.1
-Stable tag: 1.2.3
+Stable tag: 1.3.0
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -45,7 +45,14 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 1.2.3: 12-01-2022 =
+= 1.3.0: 20-01-2022 =
+* [new] ScrollTrigger - Play each iteration of animated class individually when triggered
+* [new] Copy animation UID from context menu inside library
+* [tweak] Prevent builder from breaking if selector is not a valid DOM selector
+* [tweak] Ignore Exit selectors can be written with or without dot
+* [tweak] Custom API for fetching all posts by post type name
+* [tweak:fix] Allow multiple selectors as Click / Hover triggers
+* [tweak:fix] Useage of optional chaining for event listeners which prevents code breaking
 * [fix] Issue with WordPress 5.9
 
 = 1.2.2: 11-01-2022 =
