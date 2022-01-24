@@ -45,7 +45,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 1.3.0: 23-01-2022 =
+= 1.3.0: 24-01-2022 =
 * [new] ScrollTrigger - Play each iteration of animated class individually when triggered
 * [new] Copy animation UID from context menu inside library
 * [tweak] Prevent builder from breaking if selector is not a valid DOM selector
