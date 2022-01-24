@@ -46,14 +46,14 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 == Changelog ==
 
 = 1.3.0: 24-01-2022 =
-* [new] ScrollTrigger - Play each iteration of animated class individually when triggered
-* [new] Copy animation UID from context menu inside library
+* [new] ScrollTrigger - Play each iteration of the class individually when triggered
+* [new] Copy animation UID from context menu in the library
 * [tweak] Prevent builder from breaking if selector is not a valid DOM selector
-* [tweak] Ignore Exit selectors can be written with or without dot
+* [tweak] Excluded classes for the Exit trigger can be pasted with and without dot
 * [tweak] Custom API for fetching all posts by post type name
 * [tweak:fix] Allow multiple selectors as Click / Hover triggers
-* [tweak:fix] Useage of optional chaining for event listeners which prevents code breaking
-* [fix] Issue with WordPress 5.9
+* [tweak:fix] Usage of optional chaining for event listeners which prevents code breaking
+* [fix] WordPress 5.9 compatibility
 
 = 1.2.2: 11-01-2022 =
 * [tweak] ScrollTrigger refresh and sort function
