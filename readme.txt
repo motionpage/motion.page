@@ -3,14 +3,14 @@ Author URI: https://motion.page
 Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
-Requires at least: 5.7
-Tested up to: 5.9.1
+Requires at least: 5.8
+Tested up to: 5.9.2
 Requires PHP: 7.1
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
-Move it like its HOT!
+Move it like it's HOT!
 
 == Description ==
 
@@ -44,6 +44,38 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 1.4.0: 29-03-2022 =
+* [new] Target animations by the Post Type, Oxygen templates or URL
+* [new] Filter timelines in the library
+* [new] WordPress multisite support
+* [new] Repeat / Loop the whole timeline
+* [new] From / To context menu on right-click [Duplicate, Toggle, Clear, Copy, Paste]
+* [new] Pause "page load" event animations before execution
+* [new] Custom PHP filters for targeting animations content and execution
+* [new] Ease in the custom property now accepts cubic-bezier or path string values
+* [new] Hover - restart timeline on mouse leave
+* [new] Option to bypass 'prefers-reduced-motion' for a single timeline
+* [tweak] Remove JetEngine data-url attributes and prevent click inside the builder
+* [tweak] Custom Toggle Actions
+* [tweak] Toggle Actions new property "play reverse play reverse" [Always reverse on scroll backwards]
+* [tweak] Highlight timeline name on library right click
+* [tweak] Auto-scale timeline component preview length if the animation is longer than the preview length
+* [tweak] Better error handling (notice in the bottom right corner)
+* [tweak] Prevent page exit animation by targeting wrapper parent (#wrapperID.ignore-exit)
+* [tweak] Ease & Filter - search by typing
+* [tweak] Imports with different post ID are assigned to homepage ID on change from the library
+* [fix] Plain Permalinks compatibility
+* [fix] ScrollTrigger start/end offset issue
+* [fix] Ease removal issue + correct naming
+* [fix] Timeline component preview length is now saved together with the animation
+* [fix] Timeline playhead bounds area
+* [fix] Prevent playhead move upon activating different animation from the library
+* [fix] Scroller markers disappeared after iframe refresh
+* [fix] Piotnet Grid post fetching
+* [fix] Unsaved animation not working correctly after iframe reload
+* [fix] Safari Repeat (yoyo) toggle bug
+* Various minor changes, fixes and improvements
 
 = 1.3.0: 24-01-2022 =
 * [new] ScrollTrigger - Play each iteration of the class individually when triggered
