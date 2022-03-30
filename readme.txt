@@ -6,7 +6,7 @@ Tags: motion, animations, gsap
 Requires at least: 5.8
 Tested up to: 5.9.2
 Requires PHP: 7.1
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -45,14 +45,17 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
+= 1.4.1: 30-03-2022 =
+* [fix] Wrong PHP condition when all of the timelines are set to bypass reduced-motion
+
 = 1.4.0: 29-03-2022 =
-* [new] Target animations by the Post Type, Oxygen templates or URL
+* [new] Target timelines by the Post Type, Oxygen templates or URL
 * [new] Filter timelines in the library
 * [new] WordPress multisite support
 * [new] Repeat / Loop the whole timeline
 * [new] From / To context menu on right-click [Duplicate, Toggle, Clear, Copy, Paste]
-* [new] Pause "page load" event animations before execution
-* [new] Custom PHP filters for targeting animations content and execution
+* [new] Pause "page load" event timelines before execution
+* [new] Custom PHP filters for targeting timelines content and execution
 * [new] Ease in the custom property now accepts cubic-bezier or path string values
 * [new] Hover - restart timeline on mouse leave
 * [new] Option to bypass 'prefers-reduced-motion' for a single timeline
@@ -60,26 +63,26 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [tweak] Custom Toggle Actions
 * [tweak] Toggle Actions new property "play reverse play reverse" [Always reverse on scroll backwards]
 * [tweak] Highlight timeline name on library right click
-* [tweak] Auto-scale timeline component preview length if the animation is longer than the preview length
+* [tweak] Auto-scale timeline component preview length if the timeline is longer than the preview length
 * [tweak] Better error handling (notice in the bottom right corner)
-* [tweak] Prevent page exit animation by targeting wrapper parent (#wrapperID.ignore-exit)
+* [tweak] Prevent page exit timeline by targeting wrapper parent (#wrapperID.ignore-exit)
 * [tweak] Ease & Filter - search by typing
 * [tweak] Imports with different post ID are assigned to homepage ID on change from the library
 * [fix] Plain Permalinks compatibility
 * [fix] ScrollTrigger start/end offset issue
 * [fix] Ease removal issue + correct naming
-* [fix] Timeline component preview length is now saved together with the animation
+* [fix] Timeline component preview length is now saved together with the timeline
 * [fix] Timeline playhead bounds area
-* [fix] Prevent playhead move upon activating different animation from the library
+* [fix] Prevent playhead move upon activating different timeline from the library
 * [fix] Scroller markers disappeared after iframe refresh
 * [fix] Piotnet Grid post fetching
-* [fix] Unsaved animation not working correctly after iframe reload
+* [fix] Unsaved timeline not working correctly after iframe reload
 * [fix] Safari Repeat (yoyo) toggle bug
 * Various minor changes, fixes and improvements
 
 = 1.3.0: 24-01-2022 =
 * [new] ScrollTrigger - Play each iteration of the class individually when triggered
-* [new] Copy animation UID from context menu in the library
+* [new] Copy timeline UID from context menu in the library
 * [tweak] Prevent builder from breaking if selector is not a valid DOM selector
 * [tweak] Excluded classes for the Exit trigger can be pasted with and without dot
 * [tweak] Custom API for fetching all posts by post type name
@@ -93,12 +96,12 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 = 1.2.1: 03-01-2022 =
 * [update] GSAP 3.9.1
-* [fix] Playhead tied to old animations
+* [fix] Playhead tied to old timeline
 * [fix] Wrongly generated click/hover selector in some cases
 
 = 1.2.0: 02-01-2022 =
 * [new] Click / Hover - Play each iteration of animated class individually when triggered
-* [new:tweak] Allow animation restart on Click event
+* [new:tweak] Allow timeline restart on Click event
 * [tweak:breaking] A timeline node without selector takes previous selector instead of the first one
 * [tweak] Scale value is possible to increment by 2 decimals
 * [tweak] Suppressed warnings in the console
@@ -106,7 +109,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [fix] Wrong position in the code for Click/Hover trigger - thus not working properly
 * [fix] Translate/BGPosition/Dimensions values/units bug
 * [fix] Breakpoints not working in some cases
-* [fix] Interactions Click/Hover dropdown bug - wrongly selected trigger after opening existing animation
+* [fix] Interactions Click/Hover dropdown bug - wrongly selected trigger after opening existing timeline
 * [fix] Custom property works again with a comma separated array
 * Various minor changes, fixes and improvements
 
@@ -115,25 +118,25 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [fix] Weird issue with vendors file names
 
 = 1.1.1: 16-12-2021 =
-* [tweak] Additional SrollTrigger.refresh function that prevents misorder of pined animations
+* [tweak] Additional SrollTrigger.refresh function that prevents misorder of pined timelines
 * [tweak:fix] Activate site with http/s prefix inside EDD to prevent domain name mismatch
 * [fix] Rotation value set to 0 was shown like empty input
-* [fix] Unnecessary DOMContentLoaded listener wrap on Page Load animations
+* [fix] Unnecessary DOMContentLoaded listener wrap on Page Load timelines
 
 = 1.1.0: 11-12-2021 =
 * [new] Possibility to use pin in ScrollTrigger
 * [new] Adds "play none none reverse" to toggle actions as Reverse on scroll back leave
-* [new] If prefers-reduced-motion is set to reduce, animations will not execute on the frontend
-* [tweak] Disable animation restart after save
+* [new] If prefers-reduced-motion is set to reduce, timelines will not execute on the frontend
+* [tweak] Disable timeline restart after save
 * [tweak] Page exit ignored selector not preventing default click (event) action
 * [tweak] Possibility to use multiple classes as ignored page exit selector (split by comma)
 * [tweak:fix] Remove visibility:hidden inside iframe (possibility to use body as selector in FromTo)
 * [fix] Prevent unnecessary re-renders inside builder
-* [fix] Animations stacking (in some cases)
+* [fix] Timelines stacking (in some cases)
 * Various minor changes, fixes and improvements
 
 = 1.0.9: 02-12-2021 =
-* [fix] Possibility to open animation with non-existing post
+* [fix] Possibility to open timeline with non-existing post
 * [tweak] Show "Missing Post ID / Title" instead of a spinner on non-existing post
 
 = 1.0.8: 30-11-2021 =
