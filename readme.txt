@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
 Requires at least: 5.8
-Tested up to: 5.9.2
+Tested up to: 5.9.3
 Requires PHP: 7.1
-Stable tag: 1.4.1
+Stable tag: 1.5.0
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,20 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 1.5.0: 13-05-2022 =
+* [new] ScrollSmoother plugin
+* [new] 3D Transform property
+* [new] Page Exit triggered by specific selectors
+* [new] Sync motion.page iframe reload with Oxygen or Bricks save button (same page)
+* [new] Timeline repeat delay option
+* [tweak] Speed improvements on post fetching
+* [tweak] Loader overlay if action might take longer then expected
+* [fix] Advanced targeting not properly working in some cases
+* [ui] Settings moved to a top-right panel
+* [ui] Feature request button/link
+* [update] GreenSock 3.10.4
+* Various minor changes, fixes and improvements
 
 = 1.4.1: 30-03-2022 =
 * [fix] Wrong PHP condition when all of the timelines are set to bypass reduced-motion
