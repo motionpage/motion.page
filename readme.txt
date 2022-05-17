@@ -45,7 +45,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 1.5.0: 13-05-2022 =
+= 1.5.0: 17-05-2022 =
 * [new] ScrollSmoother plugin
 * [new] 3D Transform property
 * [new] Page Exit triggered by specific selectors
