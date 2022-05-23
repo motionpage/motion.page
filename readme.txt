@@ -57,7 +57,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [fix] Advanced targeting not properly working in some cases
 * [ui] Settings moved to a top-right panel
 * [ui] Feature request button/link
-* [update] GreenSock 3.10.4
+* [update] GSAP 3.10.4
 * Various minor changes, fixes and improvements
 
 = 1.4.1: 30-03-2022 =
