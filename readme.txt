@@ -45,12 +45,13 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 1.5.0: 17-05-2022 =
+= 1.5.0: 23-05-2022 =
 * [new] ScrollSmoother plugin
 * [new] 3D Transform property
 * [new] Page Exit triggered by specific selectors
 * [new] Sync motion.page iframe reload with Oxygen or Bricks save button (same page)
 * [new] Timeline repeat delay option
+* [new] Disable post types inside builder
 * [tweak] Speed improvements on post fetching
 * [tweak] Loader overlay if action might take longer then expected
 * [fix] Advanced targeting not properly working in some cases
