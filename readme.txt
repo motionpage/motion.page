@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
 Requires at least: 5.8
-Tested up to: 5.9.3
+Tested up to: 6.0
 Requires PHP: 7.1
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,10 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 1.5.1: 25-05-2022 =
+* [fix] ScrollSmoother input resulting in black screen
+* [fix] Prevent black screen if builder loading takes longer
 
 = 1.5.0: 23-05-2022 =
 * [new] ScrollSmoother plugin
