@@ -46,7 +46,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 == Changelog ==
 
 = 1.5.2: 25-05-2022 =
-* [tweak] Versioning system
+* [fix] Versioning system & Update system
 
 = 1.5.1: 25-05-2022 =
 * [fix] ScrollSmoother input resulting in black screen
