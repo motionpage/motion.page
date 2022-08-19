@@ -4,7 +4,7 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
 Requires at least: 5.8
-Tested up to: 6.1
+Tested up to: 6.0.1
 Requires PHP: 7.1
 Stable tag: 1.6.0
 License: EULA + GPLv2
@@ -47,16 +47,16 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 = 1.6.0: 19-08-2022 =
 * [new] Lottie
-* [new] DrawSVG plugin
-* [new] Possibility to select colors with Eye Dropper (works with HTTPS and the latest Chromium browsers)
-* [new] mp-block shortcode - allow users to block all timelines from frontend by setting cookie
-* [new] Preview mode via URL parameter [e.g. /?mp=dbid1 || &mp=dbi4 || multiple split with - or ,]
-* [tweak] Possibility to use different selector for the 2nd click inside click event
+* [new] DrawSVGPlugin
+* [new] Select colors with Eye Dropper (works with HTTPS and the latest Chromium browsers)
+* [new] mp-block & mp-unblock shortcodes - allow users to block timelines on frontend
+* [new] Preview timelines on frontend via URL parameter [e.g. /?mp=dbid1 || multiple split with - or ,]
+* [tweak] Possibility to use a different selector for the 2nd click for the click event
 * [tweak] Possibility to use multiple filters
 * [tweak] ScrollSmoother refresh function after page load
-* [tweak] Possibility to close SelectorDetector with ESC key
+* [tweak] Possibility to close Selector Scanner with ESC key
 * [tweak] Exit browser notice if there is an unsaved timeline
-* [tweak] cfasync=false attribute for all GSAP files
+* [tweak] CloudFlare rocket loader - cfasync=false attribute for all GSAP files
 * [fix] Suppress PHP warnings when the database is not up-to-date with a builder
 * [fix] Non-working Hue Rotate filter
 * [fix] Non-working Border Color
@@ -65,8 +65,8 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [fix] Correct license input field on new installations
 * [fix] Prevent duplicate IDs on import
 * [fix] Timeline playhead issue
-* [ui] Split From/To properties in two sections
-* [ui] Global Settings active status badge
+* [fix] Markers disappearing or at wrong positions
+* [ui] Split From / To properties to Visual and Functional
 * Various minor changes, fixes and improvements
 
 = 1.5.2: 31-05-2022 =
