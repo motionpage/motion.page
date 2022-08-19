@@ -51,6 +51,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [new] Select colors with Eye Dropper (works with HTTPS and the latest Chromium browsers)
 * [new] mp-block & mp-unblock shortcodes - allow users to block timelines on frontend
 * [new] Preview timelines on frontend via URL parameter [e.g. /?mp=dbid1 || multiple split with - or ,]
+* [tweak] Faster loading time of the builder
 * [tweak] Possibility to use a different selector for the 2nd click for the click event
 * [tweak] Possibility to use multiple filters
 * [tweak] ScrollSmoother refresh function after page load
