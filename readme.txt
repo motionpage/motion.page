@@ -6,7 +6,7 @@ Tags: motion, animations, gsap
 Requires at least: 5.8
 Tested up to: 6.0.1
 Requires PHP: 7.1
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,9 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 1.6.1: 20-08-2022 =
+* [fix] Issue with iframe loading on specific sites
 
 = 1.6.0: 19-08-2022 =
 * [new] Lottie
