@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
 Requires at least: 5.8
-Tested up to: 6.0.1
+Tested up to: 6.0.2
 Requires PHP: 7.1
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -45,6 +45,24 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
+= 1.6.2: 06-09-2022 =
+* [new] Possibility to use RegEx inside Advanced Targeting
+* [tweak] Possibility to animate CSS variables in Custom value fields (scans root, HTML & body for CSS variables)
+* [tweak] Resize the timeline by grabbing any point at the top
+* [tweak] Possibility to use days property inside mp-block shortcode (default is 30)
+* [tweak] Auto exclude GSAP files from WP-Rocket (with rocket_delay_js_exclusions filter)
+* [tweak] Possibility to use _mp_refresher function, which will sort and refresh all ScrollTriggers on the page
+* [tweak] Query parameters /?mp=preview or /?mp=dbid1 bypass reduced motion
+* [ui] Expand animation selector input on focus
+* [ui] Wider value fields for custom and filter properties
+* [fix] Browser's back and forward buttons on page exit triggered timelines
+* [fix] Using double quotes in selector inputs without breaking
+* [fix] Iframe refresh on page select
+* [fix] Timeline playhead issues
+* [fix] Non-working filters in UI
+* [update] GSAP 3.11.1
+* Various minor changes, fixes, and improvements
+
 = 1.6.1: 20-08-2022 =
 * [fix] Issue with iframe loading on specific sites
 
@@ -53,7 +71,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [new] DrawSVGPlugin
 * [new] Select colors with Eye Dropper (works with HTTPS and the latest Chromium browsers)
 * [new] mp-block & mp-unblock shortcodes - allow users to block timelines on frontend
-* [new] Preview timelines on frontend via URL parameter [e.g. /?mp=dbid1 || multiple split with - or ,]
+* [new] Preview timelines on frontend via URL query [e.g. /?mp=dbid1 || multiple split with - or ,]
 * [tweak] Faster loading time of the builder
 * [tweak] Possibility to use a different selector for the 2nd click for the click event
 * [tweak] Possibility to use multiple filters
