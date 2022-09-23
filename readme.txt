@@ -6,7 +6,7 @@ Tags: motion, animations, gsap
 Requires at least: 5.8
 Tested up to: 6.0.2
 Requires PHP: 7.1
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,11 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 1.6.4: 23-09-2022 =
+* [fix] Lottie selectors accepts IDs and classes correctly
+* [fix] _mp_refresher uses global window variable
+* [downgrade] GSAP 3.10.4
 
 = 1.6.3: 13-09-2022 =
 * [ui] Left panel overlay during iframe URL change
