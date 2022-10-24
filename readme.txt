@@ -3,10 +3,10 @@ Author URI: https://motion.page
 Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
-Requires at least: 5.8
-Tested up to: 6.0.2
+Requires at least: 5.5
+Tested up to: 6.1
 Requires PHP: 7.1
-Stable tag: 1.6.4
+Stable tag: 1.6.5
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,18 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 1.6.5: 24-10-2022 =
+* [tweak] Possibility to write down any ease in the easing dropdown
+* [tweak] Less code on the front-end
+* [tweak] SiteGround Optimizer compatibility - Auto exclude list/function
+* [tweak] ScrollTrigger offset position values
+* [fix] ScrollSmoother - loading corrected on pages without ScrollTrigger
+* [fix] ScrollSmoother - disabled reactivation after value change
+* [fix] Timeline component node - incorrect values after browser zoom in/out
+* [fix] Prevent builder breakage if wp_debug outputs a warning inside the API request (PHP 8.1.9)
+* [fix] PHP warning that emerged after post fetch
+* [lib] Removal of Axios library
 
 = 1.6.4: 23-09-2022 =
 * [fix] Lottie selectors accepts IDs and classes correctly
