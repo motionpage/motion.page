@@ -16,6 +16,10 @@ Move it like it's HOT!
 
 With motion.page for WordPress, you can animate anything you can imagine without writing a single line of code, in a fully visual builder.
 
+== Upgrade Notice ==
+
+This is upgrade notice!
+
 == Installation ==
 
 After the purchase of one of our plans, download the plugin from the member's area, and follow the basic process.
