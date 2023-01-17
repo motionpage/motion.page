@@ -3,10 +3,10 @@ Author URI: https://motion.page
 Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec
 Tags: motion, animations, gsap
-Requires at least: 5.5
-Tested up to: 6.1
-Requires PHP: 7.1
-Stable tag: 1.6.6
+Requires at least: 5.8.6
+Tested up to: 6.1.1
+Requires PHP: 7.4
+Stable tag: 1.7.4
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,85 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.0.0-rc: 17-01-2023 =
+* [new] Sticky/Fixed elements are automatically moved outside of ScrollSmoother wrapper
+* [new] Modify selector with the right-click
+* [new] Opt-in for receiving Beta releases from the Builder Settings pane
+* [new] CookieBot compatibility with motionpage/utils/cookieconsent filter
+* [new] Sync motion.page iframe reload with Elementor save button (same page)
+* [tweak] All generated code is ES6 compatible
+* [tweak] Code that handles uploading larger files or uploading on limited servers
+* [tweak] Allow uploading .webp file format for Image Sequence
+* [tweak] Custom Code Fields internal parser
+* [tweak] Initiate SelectorDetector on input focus
+* [tweak] Prevent scripts execution in newly created image sequence folders (via .htaccess)
+* [tweak] Hide Repeat / Stagger icon from timeline if the value is set to 0
+* [tweak] 0019 issue notice explains how to fix the issue
+* [tweak] Wordpress filters - naming consistency
+* [tweak] UI components CSS
+* [tweak] Close builder dropdowns on scroll
+* [tweak] Lower memory consumption during posts/pages fetching (~8% less)
+* [tweak] Increase memory limit for post/pages fetching on excesive posts/page count
+* [fix] Breakpoints settings (new range option)
+* [fix] You can save the timeline with Pin only or Custom Code in ScrollTrigger
+* [fix] Custom Transtion Plugin incompatible with GSAP 3.11
+* [fix] Timeline nodes reflecting wrong postion on drag
+* [fix] Issue with missing _mp_GENSEL function
+* [fix] Bypass reduced motion state on toggle
+* [fix] Prevent semicolon removal in Custom Code Fields
+* [fix] Formatting issue in Code Fields
+* [fix] Plugin updater code
+* [fix] Missing database data on multisite install (when the new site is created)
+* [fix] iFrame canvas flashing (Image Sequence)
+* [fix] Range slider input component
+* [fix] Error when stagger value is changed back to 0
+* [fix] ScrollTrigger Pin issue
+* [fix] Correct UI labels for ScrollTrigger position and pin
+* [fix] Tooltips positioning
+* [fix] Allow 0 as a value inside Filters
+* [upgrade] GSAP 3.11.4
+* Various minor changes, bug fixes and additional improvements
+
+= 2.0.0-beta-3: 23-11-2022 =
+* [tweak] Better handling of video metadata during transcode
+* [tweak] Flush permalink rewrite rules on plugin activation and update
+* [fix] Missing timeline trigger on individual timelines if trigger was empty
+* [fix] Number inputs correct values during initialization
+* [fix] Range input sliders
+* [fix] Stagger is not blocked if SplitText option is enabled later than Stagger
+
+= 2.0.0-beta-2: 23-11-2022 =
+* [tweak] Generated code is transpiled to proper ES6
+* [fix] Missing builder CSS polyfills for older browsers
+* [fix] Modals work correctly in Safari and Firefox
+* [fix] Proper handling of unsupported browsers in the builder
+* [fix] Empty page instead of the builder on specific WP sites in the dashboard
+* [fix] Incorrectly loaded builder CSS on specific server configs
+* [fix] Proper clearing of canvases on node and timeline removal
+
+= 2.0.0-beta-1: 22-11-2022 =
+* [new] Redesigned UI
+* [new] Light theme
+* [new] Image Sequence + Video transcoder
+* [new] SplitText
+* [new] Custom code block in ScrollTrigger and properties
+* [new] Edit selector on right-click
+* [new] Image Sequence Shortcode [mp-canvas]
+* [new] Quick Action Links in the admin
+* [tweak] Support for rem, em, vh, vw, vmin, vmax units in Translate and Dimensions
+* [tweak] Support for "center" in ScrollTrigger element positions
+* [tweak] Tooltips positioning
+* [tweak] Suggested selectors in Lottie
+* [tweak] Possible to use Stagger (with SplitText) on multiple Click/Hover
+* [tweak] Optimized PHP code loading / performance
+* [fix] Long selector badge
+* [fix] Multiple export/delete from library
+* [fix] Missing Oxygen template in some cases in advanced targeting
+* [deprecated] Dropped support for PHP version lower than 7.4
+* [lib] Removal of Chakra Number Inputs
+* [upgrade] GSAP 3.11.3
+* Various minor changes, bug fixes and additional improvements
 
 = 1.6.6: 25-10-2022 =
 * [fix] Node duration change not working correctly in some cases
