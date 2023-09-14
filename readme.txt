@@ -1,12 +1,12 @@
-=== motion.page ===
+=== Motion.page ===
 Author URI: https://motion.page
 Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.8.6
-Tested up to: 6.2-beta2
+Tested up to: 6.3.1
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.1.0
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -14,7 +14,7 @@ Move it like it's HOT!
 
 == Description ==
 
-With motion.page for WordPress, you can animate anything you can imagine without writing a single line of code, in a fully visual builder.
+With Motion.page for WordPress, you can animate anything you can imagine without writing a single line of code, in a fully visual builder.
 
 == Installation ==
 
@@ -22,7 +22,7 @@ After the purchase of one of our plans, download the plugin from the member's ar
 
 1. Download the plugin
 2. Install the plugin by uploading the zip file to Plugins > Add New
-3. You will see the new "motion.page" link at bottom of the WP sidebar, which launches the builder
+3. You will see the new "Motion.page" link at bottom of the WP sidebar, which launches the builder
 4. Launch the builder, and add your license key on the welcome screen, to activate it.
 
 == Frequently Asked Questions ==
@@ -45,7 +45,48 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 2.0.0: 15-02-2023 =
+= 2.1.0: 14-09-2023 =
+* [new] Mouse Movement
+* [new] MotionPath integration
+* [new] Client Mode
+* [new] Zoom/Unzoom timeline component
+* [new] ScrollTrigger clamp
+* [new] ScrollSmoother speed option
+* [new] Smooth scroll to hash anchor on page load
+* [new] Better WPML & Polylang support - sync timelines across all languages (UI toggle)
+* [new] Disable ScrollSmoother on frontend for admin users (UI toggle)
+* [new] Page Events are wrapped with gsap.context
+* [tweak] Database table split into two tables
+* [tweak] Image Sequence- Support for WebP as a transparent image format
+* [tweak] Image Sequence - Device Pixel Ratio
+* [tweak] Display spinner component during deletion of image sequence files
+* [tweak] Use 'motionpage/action/front' to confirm plugin's frontend activity
+* [tweak] Option to hide quick action link (Edit with Motion.page)
+* [tweak] Ease dropdown indicates that users can either select or input the ease
+* [tweak] Improved code compression in certain scenarios
+* [tweak] Option to change license key by holding down arrow key during builder launch
+* [tweak] Updated icon for the timeline visibility toggle
+* [tweak] License keys are hashed in the database
+* [tweak] Smooth anchor links support URLs starting with '#' or '/#'
+* [tweak] Image Sequence - image decoding attribute set to async during lazy load
+* [tweak] Better multi-site support
+* [tweak] Image Sequence supports .mov and .webm files
+* [tweak] Additional filters in the library
+* [fix] UI displays consistent breakpoint values as saved ones
+* [fíx] Custom Transition plugin supports transition CSS property
+* [fix] Resolved timeline duplication inconsistencies
+* [fix] Load CustomEase plugin when gsap.parseEase is used in the custom code field
+* [fix] Posts API returns an empty array if no posts are available
+* [fix] Quick action link (Edit with Motion.page) loads the correct iframe URLs
+* [fix] Custom Code Field resolved function name issues
+* [fix] Generated code compiles to ES2015 (ES6) instead of ES2016
+* [fix] Proper license removal upon uninstallation
+* [UI] Introduced new sections in global settings
+* [UI] Slider adjusts value with mouse click-n-drag
+* [upgrade] GSAP 3.12.2
+* Various minor tweaks, bug resolutions and additional improvements
+
+= 2.0.0: 16-02-2023 =
 * [new] Redesigned UI
 * [new] Light theme
 * [new] Image Sequence + Video transcoder
@@ -58,7 +99,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [new] Opt-in for receiving Beta releases from the Builder Settings pane
 * [new] ScrollTrigger custom code field allows the use of ScrambleText plugin
 * [new] CookieBot compatibility with motionpage/utils/cookieconsent filter
-* [new] Sync motion.page iframe reload with Elementor save button (same page)
+* [new] Sync Motion.page iframe reload with Elementor save button (same page)
 * [new] Quick Action Links in the admin
 * [tweak] All generated code is ES6 compatible
 * [tweak] ScrollSmoother won't run on mobile devices if touch is set to zero
@@ -100,7 +141,6 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [fix] Long selector badge
 * [fix] Multiple export/delete from library
 * [fix] Missing Oxygen template in some cases in advanced targeting
-
 * [upgrade] GSAP 3.11.4
 * [deprecated] Dropped support for PHP version lower than 7.4
 * [lib] Removal of Chakra Number Inputs
@@ -195,7 +235,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [new] ScrollSmoother plugin
 * [new] 3D Transform property
 * [new] Page Exit triggered by specific selectors
-* [new] Sync motion.page iframe reload with Oxygen or Bricks save button (same page)
+* [new] Sync Motion.page iframe reload with Oxygen or Bricks save button (same page)
 * [new] Timeline repeat delay option
 * [new] Disable post types inside builder
 * [tweak] Speed improvements on post fetching
@@ -344,4 +384,4 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * First Release
 
 = 0.0.0: January 11, 2021 =
-* Birthday of motion.page & this readme.
+* Birthday of Motion.page & this readme.
