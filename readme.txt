@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.8.6
-Tested up to: 6.3.1
+Tested up to: 6.4-beta2
 Requires PHP: 7.4
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,12 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.1.3: 07-10-2023 =
+* [tweak] ScrollTrigger refresh function hooked to document lazyloaded event
+* [tweak] Optimole compat layer
+* [fix] WP Meteor compat layer
+* [fix] Save button duplicate action
 
 = 2.1.2: 20-09-2023 =
 * [fix] Error #002A | #002B that impacted specific server configurations
