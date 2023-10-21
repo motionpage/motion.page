@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.8.6
-Tested up to: 6.4-beta2
+Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 2.1.3
+Stable tag: 2.1.5
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,16 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.1.5: 21-10-2023 =
+* [fix] Split Text missing in the actual code (in some cases)
+* [fix] ScrollTrigger Custom Code Field - issue with nested objects
+* [fix] ScrollTrigger pin hanging in DOM after removal (in some cases)
+* [fix] Exclude Motion.page from Page Optimize plugin
+* [fix] Prevent Image Sequence from loading in ARC browser (as it is not supported by the browser)
+
+= 2.1.4: 08-10-2023 =
+* [fix] Wrong number of parameters in the plugin action links
 
 = 2.1.3: 07-10-2023 =
 * [tweak] ScrollTrigger refresh function hooked to document lazyloaded event
