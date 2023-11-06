@@ -6,7 +6,7 @@ Tags: motion, animations, gsap
 Requires at least: 5.8.6
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,12 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.1.6: 06-11-2023 =
+* [tweak] Three new PHP filters
+* [tweak] Exclude Motion.poge files from Speedien plugin (Nestify)
+* [fix] Page Exit code rendered by accident on the frontend (in some cases)
+* [fix] LazyLoaded browser event - refresh script disabled by default
 
 = 2.1.5: 21-10-2023 =
 * [fix] Split Text missing in the actual code (in some cases)
