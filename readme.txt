@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.8.6
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 2.1.6
+Stable tag: 2.1.7
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,34 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.1.7: 30-03-2024 =
+* [new] Remove other instances of GSAP library on the frontend [Experimental]
+* [tweak] Image Sequence - offload images loading to the Worker thread
+* [tweak] Image Sequence Transcoder - multi-threaded transcoding for faster processing
+* [tweak] Image Sequence Transcoder - support Arc browser and Firefox version >= 119
+* [tweak] Two new PHP filters (motionpage/utils/disableMobile & motionpage/utils/gsapDeferAsync)
+* [tweak] Scripts and files should have better exclude support for optimization plugins
+* [tweak] ScrollTrigger refresh script transpiled as ES6
+* [tweak] Faster post/page fetching in the builder
+* [tweak] Remove new post types from WP 6.5, that are not needed in the builder
+* [tweak] SelectorScanner will look for a unique parent selector for Breakdance images
+* [tweak] Lottie integration now supports also dotLottie
+* [fix] Save Button - incorrect behavior on Mouse Movement trigger
+* [fix] Additional selectors in the generated code for ScrollTrigger start/end (in rare cases)
+* [fix] ScrollSmoother option "Move fixed elements outside the wrapper" issue with Bricks builder
+* [fix] Global Settings config loss during the site migration
+* [fix] Data validation issue caused by empty "Offset from element" input field in Image Sequence
+* [fix] No Posts error notice on empty Oxygen templates
+* [fix] Three missing tooltips
+* [fix] NumPad Enter should work as Enter in the builder
+* [fix] Prevent "Cookie Yes" to show in the builder iframe
+* [fix] Replace FILTER_SANITIZE_STRING with htmlspecialchars for better PHP 8.1 compatibility
+* [fix] Prevent error #011 when the issue is non-existent
+* [fix] Timeline playhead component - issue with the playhead position
+* [fix] ClickCopy - better compatibility with different browsers
+* [upgrade] GSAP 3.12.5
+* Various minor tweaks, bug resolutions and additional improvements
 
 = 2.1.6: 06-11-2023 =
 * [tweak] Three new PHP filters
