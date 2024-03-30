@@ -57,7 +57,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [tweak] Remove new post types from WP 6.5, that are not needed in the builder
 * [tweak] SelectorScanner will look for a unique parent selector for Breakdance images
 * [tweak] Lottie integration now supports also dotLottie
-* [fix] Save Button - incorrect behavior on Mouse Movement trigger
+* [fix] Save Button - incorrect behaviour on Mouse Movement trigger
 * [fix] Additional selectors in the generated code for ScrollTrigger start/end (in rare cases)
 * [fix] ScrollSmoother option "Move fixed elements outside the wrapper" issue with Bricks builder
 * [fix] Global Settings config loss during the site migration
