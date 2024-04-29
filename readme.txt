@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.8.6
-Tested up to: 6.5
+Tested up to: 6.5.2
 Requires PHP: 7.4
-Stable tag: 2.1.7
+Stable tag: 2.1.8
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,13 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.1.8: 30-04-2024 =
+* [new] From/To custom code field allows the use of MorphSVG plugin
+* [fix] Motion Path validation schema - use default type if value is invalid
+* [fix] Safari builder page refresh issue
+* [fix] Remove other instances of GSAP - works only if there are activate timelines on the page
+* Various minor tweaks, bug resolutions and additional improvements
 
 = 2.1.7: 30-03-2024 =
 * [new] Remove other instances of GSAP library on the frontend [Experimental]
