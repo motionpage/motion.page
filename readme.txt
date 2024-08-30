@@ -3,10 +3,10 @@ Author URI: https://motion.page
 Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
-Requires at least: 5.8.6
-Tested up to: 6.5.3
+Requires at least: 5.9.0
+Tested up to: 6.6.1
 Requires PHP: 7.4
-Stable tag: 2.1.9
+Stable tag: 2.2.0-beta1
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -44,6 +44,15 @@ Motion.page was built with performance in mind from day one. Assets are conditio
 Cumulative Layout Shift (CLS) will not be affected on any animated elements above the fold. If animations use transform properties, they are perfectly ok for Core Web Vitals.
 
 == Changelog ==
+
+= 2.2.0: 30-08-2024 =
+* [new] Mouse Follower trigger
+* [new] Tooltip Cursor trigger
+* [new] Multi-drag - Timeline component in the UI allow nodes to reside in any position
+* [tweak] Allow CSS variables in the color fields
+* [fix] Advanced Code Field component will not retain the value if cleared via backspace
+* [fix] Advanced Code Field change button was not switching back to Basic Code Field
+* [fix] UI not loading in rare cases
 
 = 2.1.9: 14-05-2024 =
 * [fix] Issue with database upgrade
