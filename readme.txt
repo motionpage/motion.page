@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.9.0
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 2.2.0-beta1
+Stable tag: 2.2.0
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -45,11 +45,12 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 2.2.0: 30-08-2024 =
+= 2.2.0: 10-10-2024 =
 * [new] Mouse Follower trigger
 * [new] Tooltip Cursor trigger
 * [new] Multi-drag - Timeline component in the UI allow nodes to reside in any position
 * [tweak] Allow CSS variables in the color fields
+* [fix] Duplicating a timeline with an Image Sequence now generates unique Image Sequence IDs
 * [fix] Advanced Code Field component will not retain the value if cleared via backspace
 * [fix] Advanced Code Field change button was not switching back to Basic Code Field
 * [fix] UI not loading in rare cases
