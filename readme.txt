@@ -6,7 +6,7 @@ Tags: motion, animations, gsap
 Requires at least: 5.9.0
 Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -45,7 +45,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
-= 2.2.1: 17-10-2024 =
+= 2.2.2: 18-10-2024 =
 * [tweak] Better optimization exclude
 * [fix] Page Exit code loaded in other events in some cases
 * [fix] CSS styling
