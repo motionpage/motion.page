@@ -4,9 +4,9 @@ Plugin URI: https://motion.page
 Contributors: Rados51, DavidBabinec, krzysztoff1
 Tags: motion, animations, gsap
 Requires at least: 5.9.0
-Tested up to: 6.6.2
+Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 2.2.2
+Stable tag: 2.2.3
 License: EULA + GPLv2
 License URI: https://motion.page/eula
 
@@ -45,6 +45,32 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 
 == Changelog ==
 
+= 2.2.3: 01-07-2025 =
+* [new] Timeline nodes multi-select/drag
+* [new] Add or remove classes when triggered [experimental]
+* [new] Possibility to wrap page event triggers with executable function
+* [tweak] Open current page in Bricks or Oxygen builder
+* [tweak] Save key event in Bricks Builder now refreshes the Motion.page iframe content
+* [tweak] Pin Spacing "Auto" option now sets pinSpacing to true
+* [tweak] ReduceWhiteSpace option in SplitText
+* [tweak] CDN option now allows for wider range of GSAP plugins
+* [tweak] Context menu click on "View frontend" icon which allows to open Oxygen or Bricks builders
+* [fix] Incorrect Lottie selectors in some cases
+* [fix] Selectors keeps their spaces in Lottie code
+* [fix] Fixed an issue with scrolling inside the timeline component
+* [fix] Corrected pinSpacing "No Spacing" option to output false as a boolean instead of a string
+* [fix] Prevented Porto theme styles from loading in the builder
+* [fix] Resolved PHP 8.2+ deprecated warnings
+* [fix] Prevented unnecessary re-renders in the builder
+* [fix] Fixed incorrect popover positioning in the UI
+* [fix] SiteGround Optimizer exclusion
+* [fix] Removed the Admin Bar gap from the iframe view
+* [fix] Escape key will properly close SelectorDetector
+* [fix] Gravatar COEP console errors
+* [upgrade] GSAP 3.13.0
+* [upgrade] ffmpeg @ 0.12.15
+* Various minor tweaks, bug resolutions and additional improvements
+
 = 2.2.2: 18-10-2024 =
 * [tweak] Better optimization exclude
 * [fix] Page Exit code loaded in other events in some cases
@@ -82,7 +108,7 @@ Cumulative Layout Shift (CLS) will not be affected on any animated elements abov
 * [tweak] ScrollTrigger refresh script transpiled as ES6
 * [tweak] Faster post/page fetching in the builder
 * [tweak] Remove new post types from WP 6.5, that are not needed in the builder
-* [tweak] SelectorScanner will look for a unique parent selector for Breakdance images
+* [tweak] SelectorDetector will look for a unique parent selector for Breakdance images
 * [tweak] Lottie integration now supports also dotLottie
 * [fix] Save Button - incorrect behaviour on Mouse Movement trigger
 * [fix] Additional selectors in the generated code for ScrollTrigger start/end (in rare cases)
